@@ -3,7 +3,7 @@
 int main()
 {
     // FAST
-    cout << "\t\t\tSimplifyTranscations\n\n\n\n";
+    cout << "\n\n\n\t\t\t\tSIMPLIFY TRANSCATIONS :\n\n\n\n";
     int stop = 0, id = 0, Amount;
     string sender, receiver;
     unordered_map<string, int> nameToId;
@@ -34,12 +34,12 @@ int main()
         cout << endl;
     } while (stop == 1);
 
-    simplifiedTransactions = solve(transactions, id);
     cout << "\n\n\t\tBEFORE\n\n";
     for (Transaction x : transactions)
     {
         cout << idToName[x.payer] << "->" << idToName[x.receiver] << " Rs " << x.money << endl;
     }
+    simplifiedTransactions = solve(transactions, id);
 
     cout << "\n\n\t\tAFTER\n\n";
     for (Transaction x : simplifiedTransactions)
