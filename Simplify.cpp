@@ -41,10 +41,10 @@ int main()
     }
     simplifiedTransactions = solve(transactions, id);
 
-    cout << "\n\n\t\tAFTER\n\n";
+    cout << "\n\n\t\tSIMPLEST TRANSCATIONS TO SETTLE UP:\n\n";
     for (Transaction x : simplifiedTransactions)
     {
-        cout << idToName[x.payer] << "->" << idToName[x.receiver] << " Rs " << x.money << endl;
+        cout << idToName[x.payer] << "->" << idToName[x.receiver] << " Rs " << x.money << "\n\n\n\n";
     }
 
     return 0;

@@ -1,12 +1,4 @@
 #include <bits/stdc++.h>
-#define FAST                          \
-    ios_base::sync_with_stdio(false); \
-    cin.tie();                        \
-    cout.tie();
-#define reach(x) cout << "\n\t\t" << x << "\n\n";
-#define deb(x) cout << #x << " " << x << '\n';
-#define deb2(x, y) cout << #x << " --> " << x << " || " << #y << " --> " << y << '\n';
-#define deb4(a, b, c, d) cout << #a << " = " << a << ", " << #b << " = " << b << ", " << #c << " = " << c << ", " << #d << " = " << d << '\n';
 
 using namespace std;
 struct Transaction
@@ -28,7 +20,6 @@ vector<Transaction> solve(vector<Transaction> &transactions, int n)
 
     for (int i = 0; i < n; ++i)
     {
-        deb2(Balances[i], i);
         if (Balances[i] < 0)
         {
 
@@ -66,7 +57,7 @@ vector<Transaction> solve(vector<Transaction> &transactions, int n)
             t.payer = cid;
             t.receiver = did;
             t.money = exchangeAmt;
-            deb4(cid, did, t.money, res);
+
             simplified.push_back(t);
             res++;
 
