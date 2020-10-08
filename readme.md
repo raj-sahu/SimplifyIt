@@ -1,6 +1,6 @@
 # SimplifyIt :
 
-SimplifyIt is a tool that Suggests the Simplest Transaction's
+SimplifyIt is a tool that Suggests the Simplest Transaction's to settle up
 among a given group of Transactions .
 ### Example :
 ##### Input :
