@@ -7,7 +7,7 @@ among a given group of Transactions .
 ![](Images/Input.png)
 ##### Output :
 ![](Images/Output.png)
-![](Images/output-onlinepngtools.png)
+
 ***
 ## Usage :
 Linux
@@ -19,7 +19,7 @@ Other's :
 ```
 g++ Simplify.cpp -o SimplifyIt
 ```
->Run the File SimplifyIt
+>Run the File SimplifyIt 
 ![](Images/InputTerminal.png)
 ![](Images/OutputTerminal.png)
 ---
