@@ -10,7 +10,7 @@ int main()
     vector<string> idToName;
 
     cout << "\n\t\tENTER TRANSCATIONS : PAYER_NAME RECIVER_NAME MONEY\n \n";
-    vector<Transaction> transcations, simplifiedTranscations;
+    vector<Transaction> transactions, simplifiedTransactions;
     Transaction t;
     do
     {
@@ -28,16 +28,24 @@ int main()
         t.payer = nameToId[sender];
         t.receiver = nameToId[receiver];
         t.money = Amount;
-        transcations.push_back(t);
+        transactions.push_back(t);
         cout << "ENTER 1 TO ADD MORE TRANSCATIONS\t";
         cin >> stop;
         cout << endl;
     } while (stop == 1);
 
-    simplifiedTranscations = solve(transcations);
-    for (Transaction x : transcations)
+    simplifiedTransactions = solve(transactions, id);
+    cout << "\n\n\t\tBEFORE\n\n";
+    for (Transaction x : transactions)
     {
         cout << idToName[x.payer] << "->" << idToName[x.receiver] << " Rs " << x.money << endl;
     }
+
+    cout << "\n\n\t\tAFTER\n\n";
+    for (Transaction x : simplifiedTransactions)
+    {
+        cout << idToName[x.payer] << "->" << idToName[x.receiver] << " Rs " << x.money << endl;
+    }
+
     return 0;
 }
