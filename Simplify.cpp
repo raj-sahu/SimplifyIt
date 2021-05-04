@@ -9,7 +9,7 @@ int main()
     unordered_map<string, int> nameToId;
     vector<string> idToName;
 
-    cout << "\n\t\tENTER TRANSCATIONS : PAYER_NAME RECIVER_NAME MONEY\n \n";
+    cout << "\n\t\tENTER TRANSCATIONS : PAYER_NAME RECIEVER_NAME MONEY\n \n";
     vector<Transaction> transactions, simplifiedTransactions;
     Transaction t;
     do
